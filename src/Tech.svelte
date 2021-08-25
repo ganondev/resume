@@ -6,6 +6,7 @@
 <style lang="scss">
     .bars {
       display: flex;
+      // TODO not supported in iridium on laptop!!! update needed?
       row-gap: 5px;
       flex-direction: column;
     }
