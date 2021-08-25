@@ -34,7 +34,7 @@
 </style>
 
 
-<SectionHeader color="white">Edward Auttonberry</SectionHeader>
+<SectionHeader color="white" condensed={true}>Edward Auttonberry</SectionHeader>
 <ul>
     <li class="content"><span class="icon"><FontAwesomeIcon icon={faEnvelope} size="lg"/></span>&nbsp;edward@auttonberri.es</li>
     <li class="content"><span class="icon"><FontAwesomeIcon icon={faGlobeAmericas} size="lg"/></span>&nbsp;https://auttonberri.es</li>

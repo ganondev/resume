@@ -1,5 +1,6 @@
 <script lang="ts">
     import Header from './Header.svelte'
+    import Tech from "./Tech.svelte";
 
 	let columns = 80;
 	let color = 'blue';
@@ -9,56 +10,96 @@
 
     @import 'global.scss';
 
+    $total_width: 100;
+    $total_height: 140;
+
+    $margin_size: 2;
+    $page_width: $total_width - $margin_size * 2;
+    $page_height: $total_height - $margin_size * 2;
+
+    // CONFIG
+    $header_height: 18;
+    $header_tech_margin: 1;
+    $tech_height: 80;
+    $tech_project_margin: 0;
+    $project_height: $page_height - $tech_height - $header_height - $header_tech_margin - $tech_project_margin;
+
+    $left_width: 37;
+    $center_margin: 1;
+    $right_width: $page_width - $left_width - $center_margin;
+    //
+
+    $header_row_start: $margin_size + 1;
+    $header_row_end: $header_row_start + $header_height;
+
+    $tech_row_start: $header_row_end + $header_tech_margin;
+    $tech_row_end: $tech_row_start + $tech_height;
+
+    $project_row_start: $tech_row_end + $tech_project_margin;
+    $project_row_end: $project_row_start + $project_height;
+
+    $left_column_start: $margin_size + 1;
+    $left_column_end: $left_column_start + $left_width;
+
+    $center_margin_start: $left_column_end;
+    $center_margin_end: $center_margin_start + $center_margin;
+
+    $right_column_start: $center_margin_end;
+    $right_column_end: $right_column_start + $right_width;
+
     .page {
       display: grid;
-      grid-template-columns: repeat(100, 1%);
+      grid-template-columns: repeat($total_width, 1%);
       grid-auto-rows: 8.02px
     }
 
-    .header {
-      background-color: $background_blue;
-    }
-
     .top-margin {
-      grid-row: 1 / 3;
+      grid-row: 1 / #{1 + $margin_size};
       grid-column: 40 / 101;
     }
 
     .top-margin-header {
       grid-row: 1 / 4;
       grid-column: 1 / 40;
-      border-right: solid 3px $background_blue_accent;
+      border-right: solid 3px transparent;
+      border-bottom: solid 3px transparent;
+      background:
+              linear-gradient($background_blue, $background_blue) padding-box,
+              linear-gradient($background_blue_accent, $background_blue_accent) border-box;
     }
 
     .left-margin-header {
       grid-row: 3 / 21;
       grid-column: 1 / 4;
-      border-bottom: solid 3px $background_blue_accent;
+      border-bottom: solid 3px transparent;
+      background:
+              linear-gradient($background_blue, $background_blue) padding-box,
+              linear-gradient($background_blue_accent, $background_blue_accent) border-box;
     }
 
     .left-margin {
       grid-row: 21 / 139;
-      grid-column: 1 / 3;
+      grid-column: 1 / #{1 + $margin_size};
     }
 
     .middle-separator {
       grid-row: 3 / 139;
-      grid-column: 40;
+      grid-column: #{$center_margin_start} / #{$center_margin_end};
     }
 
     .right-margin {
       grid-row: 3 / 139;
-      grid-column: 99 / 101;
+      grid-column: #{101 - $margin_size} / 101;
     }
 
     .bottom-margin {
-      grid-row: 139 / 141;
+      grid-row: #{141 - $margin_size} / 141;
       grid-column: 1 / 101;
     }
 
     .header-block {
-      grid-row: 3 / 21;
-      grid-column: 3 / 40;
+      grid-row: #{$header_row_start} / #{$header_row_end};
+      grid-column: #{$left_column_start} / #{$left_column_end};
       border-bottom: solid 3px transparent;
       border-right: solid 3px transparent;
       background:
@@ -70,6 +111,16 @@
         ) border-box;
     }
 
+    .tech-block {
+      grid-row: #{$tech_row_start} / #{$tech_row_end};
+      grid-column: #{$left_column_start} / #{$left_column_end};
+    }
+
+    .project-block {
+      grid-row: #{$project_row_start} / #{$project_row_end};
+      grid-column: #{$left_column_start} / #{$left_column_end};
+    }
+
 </style>
 
 <div class="page">
@@ -77,15 +128,23 @@
     <!-- structural skeleton stuff that won't get printed out with the pdf -->
 
     <div class="structure top-margin"></div>
-    <div class="structure top-margin-header header"></div>
+    <div class="structure top-margin-header"></div>
     <div class="structure left-margin"></div>
-    <div class="structure left-margin-header header"></div>
+    <div class="structure left-margin-header"></div>
     <div class="structure middle-separator"></div>
     <div class="structure right-margin"></div>
     <div class="structure bottom-margin"></div>
 
-    <div class="structure header-block header">
+    <div class="structure header-block">
         <Header/>
+    </div>
+
+    <div class="structure tech-block">
+        <Tech/>
+    </div>
+
+    <div class="structure project-block">
+
     </div>
 
 </div>

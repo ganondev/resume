@@ -3,3 +3,15 @@
     border: solid black 1px;
 
 }
+
+.tech-block {
+    background: #f5d3d3;
+}
+
+.project-block {
+    background: #f8e4bb;
+}
+
+.skill-section {
+    border: dashed 1px black;
+}
