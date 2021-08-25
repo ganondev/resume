@@ -7,8 +7,7 @@
 
 <style lang="scss">
 
-    $background_blue: #0070c0;
-    $background_accent: #9cc2e5;
+    @import 'global.scss';
 
     .page {
       display: grid;
@@ -26,19 +25,19 @@
     }
 
     .top-margin-header {
-      grid-row: 1 / 3;
+      grid-row: 1 / 4;
       grid-column: 1 / 40;
-      border-right: solid 3px $background_accent;
+      border-right: solid 3px $background_blue_accent;
     }
 
     .left-margin-header {
-      grid-row: 3 / 22;
-      grid-column: 1 / 3;
-      border-bottom: solid 3px $background_accent;
+      grid-row: 3 / 21;
+      grid-column: 1 / 4;
+      border-bottom: solid 3px $background_blue_accent;
     }
 
     .left-margin {
-      grid-row: 22 / 139;
+      grid-row: 21 / 139;
       grid-column: 1 / 3;
     }
 
@@ -58,10 +57,17 @@
     }
 
     .header-block {
-      grid-row: 3 / 22;
+      grid-row: 3 / 21;
       grid-column: 3 / 40;
-      border-bottom: solid 3px $background_accent;
-      border-right: solid 3px $background_accent;
+      border-bottom: solid 3px transparent;
+      border-right: solid 3px transparent;
+      background:
+        linear-gradient($background_blue, $background_blue) padding-box,
+        radial-gradient(
+            ellipse farthest-corner at bottom right,
+            $background_orange,
+            $background_blue_accent 50%
+        ) border-box;
     }
 
 </style>
@@ -80,7 +86,6 @@
 
     <div class="structure header-block header">
         <Header/>
-
     </div>
 
 </div>

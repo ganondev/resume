@@ -67,3 +67,9 @@ button:focus {
 	src:url("./Daytona-W05-Condensed.woff")
 	format("woff")
 }
+
+@font-face{
+	font-family:"Daytona W05 Regular";
+	src:url("./Daytona-W05-Regular.woff")
+	format("woff")
+}
