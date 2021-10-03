@@ -6,10 +6,13 @@
 <style lang="scss">
   @import 'global.scss';
   .skill-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
     width: 100%;
   }
   .skill-name {
-    font-family: "Daytona W05 Regular",serif;
+    font-family: "Daytona W05 Condensed",serif;
     font-size: 20px;
   }
   .bar {
@@ -24,10 +27,15 @@
         );
     border-radius: 50px;
   }
+  .tools {
+    font-size: 14px;
+  }
 </style>
 
 <div class="skill-section">
     <span class="skill-name"><slot>No title</slot></span>
+    {#if percentage}
     <div class="bar" style="--percentage:{percentage}%"></div>
+    {/if}
     <span class="tools">{tools.join(', ')}</span>
 </div>
