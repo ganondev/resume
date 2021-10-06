@@ -1,6 +1,7 @@
 <script lang="ts">
     import Header from './Header.svelte'
     import Tech from "./Tech.svelte";
+    import Project from "./Projects.svelte"
 
 	let columns = 80;
 	let color = 'blue';
@@ -144,7 +145,7 @@
     </div>
 
     <div class="structure project-block">
-
+        <Project/>
     </div>
 
 </div>
