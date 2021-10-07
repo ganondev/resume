@@ -5,11 +5,10 @@
 </script>
 
 <style lang="scss">
+    @import "global.scss";
+
     h3 {
       margin: 2px 0;
-      font-family: "Daytona W05 Regular", serif;
-      font-weight: unset;
-      line-height: 1.1em;
     }
 
     h4 {
@@ -26,6 +25,6 @@
     }
 </style>
 
-<h3>{title}</h3>
+<h3 class="highlight-text">{title}</h3>
 <h4>{link}</h4>
 <p>{desc}</p>

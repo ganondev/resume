@@ -31,6 +31,9 @@
         list-style-type: none;
         padding: 0;
     }
+    .split {
+      color: $background_orange;
+    }
 </style>
 
 
@@ -38,5 +41,5 @@
 <ul>
     <li class="content"><span class="icon"><FontAwesomeIcon icon={faEnvelope} size="lg"/></span>&nbsp;edward@auttonberri.es</li>
     <li class="content"><span class="icon"><FontAwesomeIcon icon={faGlobeAmericas} size="lg"/></span>&nbsp;https://auttonberri.es</li>
-    <li class="content"><span class="icon"><FontAwesomeIcon icon={faGithub} size="lg"/></span>&nbsp;zefaxet</li>
+    <li class="content"><span class="icon"><FontAwesomeIcon icon={faGithub} size="lg"/></span>&nbsp;zefaxet <span class="split">|</span> ganondev</li>
 </ul>

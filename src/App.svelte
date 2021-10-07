@@ -1,7 +1,10 @@
 <script lang="ts">
-    import Header from './Header.svelte'
+    import Header from './Header.svelte';
     import Tech from "./Tech.svelte";
-    import Project from "./Projects.svelte"
+    import Project from "./Projects.svelte";
+    import Employment from "./Employment.svelte";
+    import Education from "./Education.svelte";
+    import Certifications from "./Certifications.svelte";
 
 	let columns = 80;
 	let color = 'blue';
@@ -25,6 +28,10 @@
     $tech_project_margin: 0;
     $project_height: $page_height - $tech_height - $header_height - $header_tech_margin - $tech_project_margin;
 
+    $employment_height: 97;
+    $employment_education_margin: 1;
+    $education_height: $page_height - $employment_height - $employment_education_margin;
+
     $left_width: 37;
     $center_margin: 1;
     $right_width: $page_width - $left_width - $center_margin;
@@ -38,6 +45,12 @@
 
     $project_row_start: $tech_row_end + $tech_project_margin;
     $project_row_end: $project_row_start + $project_height;
+
+    $employment_row_start: $margin_size + 1;
+    $employment_row_end: $employment_row_start + $employment_height;
+
+    $education_row_start: $employment_row_end + $employment_education_margin;
+    $education_row_end: $education_row_start + $education_height;
 
     $left_column_start: $margin_size + 1;
     $left_column_end: $left_column_start + $left_width;
@@ -122,6 +135,16 @@
       grid-column: #{$left_column_start} / #{$left_column_end};
     }
 
+    .employment-block {
+      grid-row: #{$employment_row_start} / #{$employment_row_end};
+      grid-column: #{$right_column_start} / #{$right_column_end};
+    }
+
+    .education-block {
+      grid-row: #{$education_row_start} / #{$education_row_end};
+      grid-column: #{$right_column_start} / #{$right_column_end};
+    }
+
 </style>
 
 <div class="page">
@@ -146,6 +169,15 @@
 
     <div class="structure project-block">
         <Project/>
+    </div>
+
+    <div class="structure employment-block">
+        <Employment/>
+    </div>
+
+    <div class="structure education-block">
+        <Education/>
+        <Certifications/>
     </div>
 
 </div>
