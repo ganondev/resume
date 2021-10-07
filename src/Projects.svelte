@@ -10,9 +10,9 @@
     }
     div {
       width: 100%;
-      height: 2px;
+      height: 4px;
       background: linear-gradient(to right, $background_orange, $background_blue);
-      margin-top: 3px;
+      margin: 7px 0;
     }
 </style>
 

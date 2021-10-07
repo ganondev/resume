@@ -21,7 +21,7 @@
     // CONFIG
     $header_height: 18;
     $header_tech_margin: 1;
-    $tech_height: 88;
+    $tech_height: 86;
     $tech_project_margin: 0;
     $project_height: $page_height - $tech_height - $header_height - $header_tech_margin - $tech_project_margin;
 
