@@ -15,3 +15,7 @@
 .skill-section {
     border: dashed 1px black;
 }
+
+.bars {
+    row-gap: 5px !important;
+}

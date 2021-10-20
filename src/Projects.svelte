@@ -1,6 +1,7 @@
 <script lang="ts">
     import SectionHeader from "./SectionHeader.svelte";
-    import Project from "./Project.svelte"
+    import Project from "./Project.svelte";
+    import Separator from "./Separator.svelte";
 </script>
 
 <style lang="scss">
@@ -22,13 +23,13 @@
     link="https://github.com/zefaxet/libant"
     desc="Embedded cellular automata engine in C"
 />
-<div></div>
+<Separator/>
 <Project
     title="network-priveleges"
     link="https://github.com/ganondev/network-priveleges"
     desc="UE4 plugin for role-based authorization"
 />
-<div></div>
+<Separator/>
 <Project
     title="Godot Engine"
     link="https://github.com/godotengine/godot"

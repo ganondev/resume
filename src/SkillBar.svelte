@@ -28,7 +28,7 @@
     border-radius: 50px;
   }
   .tools {
-    font-size: 14px;
+    font-size: 12px;
   }
 </style>
 

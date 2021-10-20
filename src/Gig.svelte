@@ -2,7 +2,7 @@
     export let title = "title?";
     export let start = "Mo YYYY";
     export let end = "Present?";
-    export let employer = "employer?";
+    export let employer;
 </script>
 
 <style lang="scss">

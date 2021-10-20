@@ -9,7 +9,7 @@
     div {
       display: flex;
       flex-direction: column;
-      row-gap: 10px;
+      row-gap: 7px;
     }
 
 </style>
@@ -17,12 +17,27 @@
 <SectionHeader>Employment</SectionHeader>
 <div>
     <Gig
-        title="Founding Engineer - Cloud"
+        title="Chief Solutions Architect"
         start="Aug 2021"
         end="Present"
         employer="manifest.stream"
     >
-        <Acc>damn boi thats a big ass BOY boi DAMN SON thats A BIG ASS BOY BOY DAAAAAAAMn</Acc>
+        <Acc>
+            Architect foundational AWS infrastructure for development and
+            production needs
+        </Acc>
+        <Acc>
+            Construct highly and globally available virtual hangout spaces
+            using Unreal Engine pixel streaming and Kafka
+        </Acc>
+        <Acc>
+            Devise scheme for scalable engine server architecture using Docker
+            on Fargate, capable of supporting hundreds of players per level
+        </Acc>
+        <Acc>
+            Enable real-time play-in-browser experience including
+            motion capture and multimedia streaming
+        </Acc>
     </Gig>
     <Gig
         title="Application Engineer II"
@@ -30,13 +45,27 @@
         end="Present"
         employer="Vanguard"
     >
+        <Acc>Program engineer spotlight: September 2021</Acc>
+        <Acc>Save tens of thousands by optimizing Docker allocations in ECS</Acc>
         <Acc>
-            Performed research and analysis on utilization and scaling of Docker clusters on AWS ECS and optimized them,
-            successfully saving tens-of-thousands of dollars on cloud hosting costs.
+            Lead team to develop Electron application and serverless
+            infrastructure to enhance weekly production release cycle
         </Acc>
         <Acc>
-            Drove development of AWS/Bamboo CI infrastructure to allow for
-            fully continuous feature integration for all services.
+            Overhaul architecture of many complex microservices to utilize
+            resilient event-driven patterns
+        </Acc>
+        <Acc>
+            Own full stack of Nx Angular UI, hundreds of Java/Springboot microservices,
+            and the AWS resources that power them
+        </Acc>
+        <Acc>
+            Apply Machine Learning and Monte Carlo simulations to calculate
+            and optimize retirement success
+        </Acc>
+        <Acc>
+            Implement high-throughput analytics pipelines utilizing
+            Kafka, S3, SageMaker, Lambda, and Redshift
         </Acc>
     </Gig>
     <Gig
@@ -45,35 +74,24 @@
         end="Aug 2020"
         employer="Fenway Group"
     >
+        <Acc>Consultant spotlight: May 2020</Acc>
         <Acc>
-            Employee of the month for May of 2020
+            Manage long and short-term engagements, mentoring developers,
+            driving Agile teams, and making architecture decisions
         </Acc>
         <Acc>
-            Led multiple full-stack development engagements to quick
-            success, acting as a mentor and occasional interim team lead
-        </Acc>
-        <Acc>
-            Developed APIs that reduced development effort on ongoing
+            Develop APIs that reduced development effort on ongoing
             projects by 30% and increased software efficiency by up to 41%
         </Acc>
         <Acc>
-            Worked at all levels of the stack to create and improve multiple
+            Work at all levels of the stack to create and improve multiple
             sets of portals, microservices, and business pipelines
         </Acc>
         <Acc>
-            Secured client services by migrating them to load-balanced AWS
-            EC2 clusters and RDS instances within isolated VPC containers
+            Test using JUnit, NUnit, Cypress, and Selenium
         </Acc>
         <Acc>
-            Founded process for standing up well-tested microservices using
-            Java and Spring, deploying reliable API systems with XSD schema
-            and Swagger dependency packages in matters of weeks
-        </Acc>
-        <Acc>
-            UX and UI testing using Selenium and Cypress
-        </Acc>
-        <Acc>
-            Productivity star who drove teams to deliver quality full-stack web
+            At-all-costs contributor who drove teams to deliver quality full-stack web
             application packages in under 10 weeks
         </Acc>
         <Acc>
@@ -82,26 +100,22 @@
         </Acc>
     </Gig>
     <Gig
-        title="Software Engineer"
+        title="Freelance Software Engineer"
         start="Dec 2016"
         end="Jan 2018"
-        employer="Freelance"
+        employer="[Various]"
     >
         <Acc>
             <b>Clients:</b> Society of St. John the Evangelist, Asset Research Group
             LLC., Virginia Theological Seminary
         </Acc>
         <Acc>
-            Introduced much-needed automation and futureproofing for
-            agencies that were outgrowing their manpower
+            Introduce critical automation and future-proofing for
+            agencies outgrowing their manpower
         </Acc>
         <Acc>
             Accelerated the development of global event pages against short
             deadlines while ensuring highly reliable and scalable products
-        </Acc>
-        <Acc>
-            Personalized serverless websites in the cloud powered by
-            TypeScript and React or Angular
         </Acc>
     </Gig>
 </div>
