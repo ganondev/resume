@@ -28,7 +28,7 @@
     $tech_project_margin: 0;
     $project_height: $page_height - $tech_height - $header_height - $header_tech_margin - $tech_project_margin;
 
-    $employment_height: 100;
+    $employment_height: 105;
     $employment_education_margin: 1;
     $education_height: $page_height - $employment_height - $employment_education_margin;
 

@@ -17,32 +17,36 @@
 <SectionHeader>Employment</SectionHeader>
 <div>
     <Gig
-        title="Chief Solutions Architect"
-        start="Aug 2021"
+        title="Cloud Developer III"
+        start="Jan 2022"
         end="Present"
-        employer="manifest.stream"
+        employer="Hewlett Packard Enterprise"
     >
         <Acc>
-            Architect foundational AWS infrastructure for development and
-            production needs
+            Develop and maintain the Compute Ops Manager platform
         </Acc>
         <Acc>
-            Construct highly and globally available virtual hangout spaces
-            using Unreal Engine pixel streaming and Kafka
+            Scale platform services to support parallel communication with tens
+            of thousands of customer compute devices (iLO)
         </Acc>
         <Acc>
-            Devise scheme for scalable engine server architecture using Docker
-            on Fargate, capable of supporting hundreds of players per level
+            Support global multi-region production in daily deploy and real-
+            time defect and health triage
         </Acc>
         <Acc>
-            Enable real-time play-in-browser experience including
-            motion capture and multimedia streaming
+            Enhance and maintain complete stack of UI, asynchronous and
+            synchronous service layer, AWS infrastructure, database administration,
+            integration of real customer-owned servers, and the CI/CD process
+        </Acc>
+        <Acc>
+            Enable customer awareness of their carbon footprint via development
+            of carbon reporting technology
         </Acc>
     </Gig>
     <Gig
         title="Application Engineer II"
         start="Aug 2020"
-        end="Present"
+        end="Jan 2022"
         employer="Vanguard"
     >
         <Acc>Program engineer spotlight: September 2021</Acc>

@@ -27,7 +27,7 @@
 <Project
     title="network-priveleges"
     link="https://github.com/ganondev/network-priveleges"
-    desc="UE4 plugin for role-based authorization"
+    desc="UE4 plugin for role-based access control"
 />
 <Separator/>
 <Project

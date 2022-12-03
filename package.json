@@ -29,6 +29,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "node-sass": "^6.0.1",
+    "sass": "^1.56.1",
     "sirv-cli": "^1.0.0"
   }
 }
