@@ -134,6 +134,7 @@
         ElasticSearch,
         OpenSearch,
         FastAPI, Flask, Django, PyUnit, Extensions API
+        Oracle DB,
         -->
     </Gig>
     <Gig

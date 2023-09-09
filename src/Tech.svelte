@@ -33,7 +33,7 @@
     <SkillBar percentage={98} tools={['Spring', 'Gradle', 'Hibernate', 'Kotlin', 'Scala']}>Java</SkillBar>
     <SkillBar percentage={95} tools={['ASP.NET', 'EntityFramework', 'C#', 'Mono']}>.NET</SkillBar>
     <SkillBar percentage={92} tools={['TypeScript', 'React', 'Angular', 'Sass', 'Svelte', 'Electron']}>Front-End</SkillBar>
-    <SkillBar percentage={88} tools={['Postgres', 'NoSQL', 'Oracle', 'Redis', 'DynamoDB', 'Redshift']}>Databases</SkillBar>
+    <SkillBar percentage={88} tools={['Postgres', 'ElasticSearch', 'NoSQL', 'Redis', 'DynamoDB']}>Databases</SkillBar>
     <SkillBar percentage={90} tools={['Bash', 'AWS', 'Kafka', 'Terraform', 'Serverless', 'Kubernetes']}>Infra</SkillBar>
     <SkillBar percentage={80} tools={['MSVC', 'MSBuild', 'Windows Driver Foundation']}>Windows</SkillBar>
     <SkillBar percentage={85} tools={['C/C++', 'Embedded', 'Kernel Modules', 'HID']}>Linux (and friends)</SkillBar>
