@@ -38,7 +38,7 @@
     <SkillBar percentage={80} tools={['MSVC', 'MSBuild', 'Windows Driver Foundation']}>Windows</SkillBar>
     <SkillBar percentage={85} tools={['C/C++', 'Embedded', 'Kernel Modules', 'HID']}>Linux (and friends)</SkillBar>
     <SkillBar percentage={89} tools={['UE4', 'Unity', 'Godot', 'Networking', 'Shaders']}>Gamedev</SkillBar>
-    <SkillBar percentage={0} tools={['Agile', 'Debugging', 'JWT', 'XSL', 'IAM', 'SSO', 'DevOps', 'Lambda', 'Git', 'CI/CD', 'WebSocket', 'MS SQL', 'RDS', 'REST']}>Other</SkillBar>
+    <SkillBar percentage={0} tools={['Agile', 'JWT', 'XSL', 'IAM', 'SSO', 'DevOps', 'Lambda', 'Git', 'CI/CD', 'WebSocket', 'MS SQL', 'RDS', 'REST', 'GoLang', 'MVC']}>Other</SkillBar>
     <!-- TODO for some reason this is clipped in browser but correct in pdf -->
     <div class="claim">This resume built using <a href="https://svelte.dev/">Svelte</a></div>
 </div>
