@@ -18,10 +18,15 @@
 </style>
 
 <SectionHeader>Projects</SectionHeader>
+<!--<Project-->
+<!--    title="libant"-->
+<!--    link="https://github.com/zefaxet/libant"-->
+<!--    desc="Embedded cellular automata engine in C"-->
+<!--/>-->
 <Project
-    title="libant"
-    link="https://github.com/zefaxet/libant"
-    desc="Embedded cellular automata engine in C"
+    title="shallnotpass.io"
+    link="https://shallnotpass.io"
+    desc="Stateless password management tool"
 />
 <Separator/>
 <Project
