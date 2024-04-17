@@ -30,9 +30,9 @@
 />
 <Separator/>
 <Project
-    title="network-priveleges"
-    link="https://github.com/ganondev/network-priveleges"
-    desc="UE4 plugin for role-based access control"
+    title="Reaction Engine"
+    link="In Development"
+    desc="ML powered search and catalog for memes"
 />
 <Separator/>
 <Project

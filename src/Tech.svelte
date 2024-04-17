@@ -24,20 +24,21 @@
 
 <SectionHeader>Tech</SectionHeader>
 <div class="bars">
+    <SkillBar percentage={98} tools={['Spring', 'Gradle', 'Hibernate', 'Kotlin', 'Scala']}>Java</SkillBar>
+    <SkillBar percentage={98} tools={['TypeScript', 'React', 'Angular', 'Vue', 'Svelte', 'Electron']}>Front-End</SkillBar>
+    <SkillBar percentage={95} tools={['Tensorflow', 'Keras', 'Sklearn', 'OpenCV', 'Torch', 'SageMaker']}>AI/ML</SkillBar>
+    <SkillBar percentage={88} tools={['Postgres', 'ElasticSearch', 'MongoDB', 'Redis', 'DynamoDB']}>Databases</SkillBar>
+    <SkillBar percentage={90} tools={['Bash', 'AWS', 'Kafka', 'Terraform', 'Serverless', 'Kubernetes']}>Infra/DevOps</SkillBar>
+    <!-- TODO need better java skills these kinda suckzzz -->
     <SkillBar
-        percentage={98}
-        tools={['FastAPI', 'Flask', 'Django', 'PyUnit', 'Extensions API']}>
+            percentage={98}
+            tools={['FastAPI', 'Flask', 'Django', 'Numpy', 'Pandas', 'Extensions API']}>
         Python
     </SkillBar>
-    <!-- TODO need better java skills these kinda suckzzz -->
-    <SkillBar percentage={98} tools={['Spring', 'Gradle', 'Hibernate', 'Kotlin', 'Scala']}>Java</SkillBar>
     <SkillBar percentage={95} tools={['ASP.NET', 'EntityFramework', 'C#', 'Mono']}>.NET</SkillBar>
-    <SkillBar percentage={92} tools={['TypeScript', 'React', 'Angular', 'Sass', 'Svelte', 'Electron']}>Front-End</SkillBar>
-    <SkillBar percentage={88} tools={['Postgres', 'ElasticSearch', 'NoSQL', 'Redis', 'DynamoDB']}>Databases</SkillBar>
-    <SkillBar percentage={90} tools={['Bash', 'AWS', 'Kafka', 'Terraform', 'Serverless', 'Kubernetes']}>Infra</SkillBar>
-    <SkillBar percentage={80} tools={['MSVC', 'MSBuild', 'Windows Driver Foundation']}>Windows</SkillBar>
-    <SkillBar percentage={85} tools={['C/C++', 'Embedded', 'Kernel Modules', 'HID']}>Linux (and friends)</SkillBar>
-    <SkillBar percentage={89} tools={['UE4', 'Unity', 'Godot', 'Networking', 'Shaders']}>Gamedev</SkillBar>
+<!--    <SkillBar percentage={80} tools={['MSVC', 'MSBuild', 'Windows Driver Foundation']}>Windows</SkillBar>-->
+    <SkillBar percentage={85} tools={['C/C++', 'Embedded', 'Kernel Modules', 'HID', 'WDK']}>Bare Metal</SkillBar>
+    <SkillBar percentage={89} tools={['UE5', 'Unity', 'Godot', 'Networking', 'Shaders']}>Gamedev</SkillBar>
     <SkillBar percentage={0} tools={['Agile', 'JWT', 'XSL', 'IAM', 'SSO', 'DevOps', 'Lambda', 'Git', 'CI/CD', 'WebSocket', 'MS SQL', 'RDS', 'REST', 'GoLang', 'MVC']}>Other</SkillBar>
     <!-- TODO for some reason this is clipped in browser but correct in pdf -->
     <div class="claim">This resume built using <a href="https://svelte.dev/">Svelte</a></div>
