@@ -39,13 +39,21 @@
 <!--            onboarding of customer devices, and the CI/CD process-->
 <!--        </Acc>-->
         <Acc>
-            Modernize UI with patented state management and UX flow framework systems
+            Patent state management and UX flow framework systems
             based on functional and procedural programming paradigms
         </Acc>
+<!--        <Acc>-->
+<!--            Enable customers to generate reports of metrics relevant to their devices,-->
+<!--            such as carbon emissions, by constructing real-time device data collection-->
+<!--            and archival infrastructure and microservices-->
+<!--        </Acc>-->
         <Acc>
-            Enable customers to generate reports of metrics relevant to their devices,
-            such as carbon emissions, by constructing real-time device data collection
-            and archival infrastructure and microservices
+            Develop real-time carbon emissions reporting infrastructure and
+            systems for customer devices
+        </Acc>
+        <Acc>
+            Establish and implement internal machine learning model training platform
+            utilizing AWS and on-premises ESX VM infrastructure
         </Acc>
 <!--        <Acc>-->
 <!--            Enable customer awareness of their carbon footprint via development-->
@@ -142,7 +150,7 @@
         title="Freelance Developer"
         start="Dec 2016"
         end="Jan 2018"
-        employer="Multiple Clients"
+        employer="Virginia Theological Seminary"
     >
         <Acc>
             Introduce critical automation and future-proofing for
