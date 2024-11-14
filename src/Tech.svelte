@@ -41,5 +41,5 @@
     <SkillBar percentage={89} tools={['UE5', 'Unity', 'Godot', 'Networking', 'Shaders']}>Gamedev</SkillBar>
     <SkillBar percentage={0} tools={['Agile', 'JWT', 'XSL', 'IAM', 'SSO', 'Lambda', 'Git', 'CI/CD', 'WebSocket', 'MS SQL', 'RDS', 'REST', 'GoLang', 'MVC']}>Other</SkillBar>
     <!-- TODO for some reason this is clipped in browser but correct in pdf -->
-    <div class="claim">This resume built using <a href="https://svelte.dev/">Svelte</a></div>
+<!--    <div class="claim">This resume built using <a href="https://svelte.dev/">Svelte</a></div>-->
 </div>
