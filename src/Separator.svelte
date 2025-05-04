@@ -1,11 +1,8 @@
-<style lang="scss">
-  @import 'global.scss';
-  div {
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(to right, $background_orange, $background_blue);
-    margin: 7px 0;
-  }
-</style>
+<script lang="ts">
+  export let width: string = '100%';
+  export let height: string = '4px';
+  export let background: string = 'linear-gradient(to right, #ED7D31, #0070c0)';
+  export let margin: string = '7px 0';
+</script>
 
-<div></div>
+<div style="width: {width}; height: {height}; background: {background}; margin: {margin};"></div>

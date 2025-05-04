@@ -21,45 +21,43 @@
     $page_width: $total_width - $margin_size * 2;
     $page_height: $total_height - $margin_size * 2;
 
-    // CONFIG
-    $header_height: 18;
-    $header_tech_margin: 1;
-    $tech_height: 86;
-    $tech_project_margin: 0;
-    $project_height: $page_height - $tech_height - $header_height - $header_tech_margin - $tech_project_margin;
+    // CONFIG - Updated for 1 column layout
+    $header_height: 16;
+    $headline_skills_height: 8;
+    $header_skills_margin: 1;
+    $employment_height: 110;
+    
+    $education_height: 25;
+    $education_projects_margin: 1;
+    $projects_height: 35;
+    $projects_skills_margin: 1;
+    $skills_height: 76;
 
-    $employment_height: 105;
-    $employment_education_margin: 1;
-    $education_height: $page_height - $employment_height - $employment_education_margin;
-
-    $left_width: 37;
-    $center_margin: 1;
-    $right_width: $page_width - $left_width - $center_margin;
+    $full_width: $page_width;
     //
 
+    // Page 1 layout
     $header_row_start: $margin_size + 1;
     $header_row_end: $header_row_start + $header_height;
 
-    $tech_row_start: $header_row_end + $header_tech_margin;
-    $tech_row_end: $tech_row_start + $tech_height;
+    $headline_skills_row_start: $header_row_end + $header_skills_margin;
+    $headline_skills_row_end: $headline_skills_row_start + $headline_skills_height;
 
-    $project_row_start: $tech_row_end + $tech_project_margin;
-    $project_row_end: $project_row_start + $project_height;
-
-    $employment_row_start: $margin_size + 1;
+    $employment_row_start: $headline_skills_row_end + 1;
     $employment_row_end: $employment_row_start + $employment_height;
 
-    $education_row_start: $employment_row_end + $employment_education_margin;
+    // Page 2 layout
+    $education_row_start: $margin_size + 1;
     $education_row_end: $education_row_start + $education_height;
 
-    $left_column_start: $margin_size + 1;
-    $left_column_end: $left_column_start + $left_width;
+    $projects_row_start: $education_row_end + $education_projects_margin;
+    $projects_row_end: $projects_row_start + $projects_height;
 
-    $center_margin_start: $left_column_end;
-    $center_margin_end: $center_margin_start + $center_margin;
+    $skills_row_start: $projects_row_end + $projects_skills_margin;
+    $skills_row_end: $skills_row_start + $skills_height;
 
-    $right_column_start: $center_margin_end;
-    $right_column_end: $right_column_start + $right_width;
+    $column_start: $margin_size + 1;
+    $column_end: $column_start + $full_width;
 
     .page {
       display: grid;
@@ -67,42 +65,47 @@
       grid-auto-rows: 8.02px
     }
 
+    .header-bg {
+      background: $background_blue;
+    }
+
     .top-margin {
       grid-row: 1 / #{1 + $margin_size};
-      grid-column: 40 / 101;
+      grid-column: 1 / 101;
     }
 
-    .top-margin-header {
-      grid-row: 1 / 4;
-      grid-column: 1 / 40;
-      border-right: solid 3px transparent;
-      border-bottom: solid 3px transparent;
-      background:
-              linear-gradient($background_blue, $background_blue) padding-box,
-              linear-gradient($background_blue_accent, $background_blue_accent) border-box;
+    .top-margin.header-bg {
+      // Ensures the blue background for the header's top margin
     }
 
+    // Split left margin for header and rest
     .left-margin-header {
-      grid-row: 3 / 21;
-      grid-column: 1 / 4;
-      border-bottom: solid 3px transparent;
-      background:
-              linear-gradient($background_blue, $background_blue) padding-box,
-              linear-gradient($background_blue_accent, $background_blue_accent) border-box;
-    }
+      grid-row: #{1 + $margin_size} / #{$header_row_end};
+      grid-column: 1 / #{1 + $margin_size};
 
-    .left-margin {
-      grid-row: 21 / 139;
+      &.p1 {
+        border-bottom: solid 2px $background_blue_accent;
+      }
+
+    }
+    .left-margin-rest {
+      grid-row: #{$header_row_end} / 139;
       grid-column: 1 / #{1 + $margin_size};
     }
 
-    .middle-separator {
-      grid-row: 3 / 139;
-      grid-column: #{$center_margin_start} / #{$center_margin_end};
+    // Split right margin for header and rest
+    .right-margin-header {
+      grid-row: #{1 + $margin_size} / #{$header_row_end};
+      grid-column: #{101 - $margin_size} / 101;
+
+      &.p1 {
+        border-bottom: solid 2px $background_orange;
+      }
+
     }
 
-    .right-margin {
-      grid-row: 3 / 139;
+    .right-margin-rest {
+      grid-row: #{$header_row_end} / 139;
       grid-column: #{101 - $margin_size} / 101;
     }
 
@@ -111,11 +114,11 @@
       grid-column: 1 / 101;
     }
 
+    // Page 1 blocks
     .header-block {
       grid-row: #{$header_row_start} / #{$header_row_end};
-      grid-column: #{$left_column_start} / #{$left_column_end};
+      grid-column: #{$column_start} / #{$column_end};
       border-bottom: solid 3px transparent;
-      border-right: solid 3px transparent;
       background:
         linear-gradient($background_blue, $background_blue) padding-box,
         radial-gradient(
@@ -125,69 +128,74 @@
         ) border-box;
     }
 
-    .tech-block {
-      grid-row: #{$tech_row_start} / #{$tech_row_end};
-      grid-column: #{$left_column_start} / #{$left_column_end};
-    }
-
-    .project-block {
-      grid-row: #{$project_row_start} / #{$project_row_end};
-      grid-column: #{$left_column_start} / #{$left_column_end};
+    .headline-skills-block {
+      grid-row: #{$headline_skills_row_start} / #{$headline_skills_row_end};
+      grid-column: #{$column_start} / #{$column_end};
     }
 
     .employment-block {
       grid-row: #{$employment_row_start} / #{$employment_row_end};
-      grid-column: #{$right_column_start} / #{$right_column_end};
+      grid-column: #{$column_start} / #{$column_end};
     }
 
+    // Page 2 blocks
     .education-block {
       grid-row: #{$education_row_start} / #{$education_row_end};
-      grid-column: #{$right_column_start} / #{$right_column_end};
+      grid-column: #{$column_start} / #{$column_end};
+    }
+
+    .project-block {
+      grid-row: #{$projects_row_start} / #{$projects_row_end};
+      grid-column: #{$column_start} / #{$column_end};
+    }
+
+    .skills-block {
+      grid-row: #{$skills_row_start} / #{$skills_row_end};
+      grid-column: #{$column_start} / #{$column_end};
     }
 
 </style>
 
+<!-- Page 1: Intro, Headline Skills, Employment -->
 <div class="page">
-
     <!-- structural skeleton stuff that won't get printed out with the pdf -->
-
-    <div class="structure top-margin"></div>
-    <div class="structure top-margin-header"></div>
-    <div class="structure left-margin"></div>
-    <div class="structure left-margin-header"></div>
-    <div class="structure middle-separator"></div>
-    <div class="structure right-margin"></div>
+    <div class="structure top-margin header-bg"></div>
+    <div class="structure left-margin-header header-bg p1"></div>
+    <div class="structure left-margin-rest"></div>
+    <div class="structure right-margin-header header-bg p1"></div>
+    <div class="structure right-margin-rest"></div>
     <div class="structure bottom-margin"></div>
 
     <div class="structure header-block">
         <Header/>
     </div>
 
-    <div class="structure tech-block">
-        <Tech/>
-    </div>
-
-    <div class="structure project-block">
-        <Project/>
-    </div>
-
     <div class="structure employment-block">
         <Employment/>
     </div>
+</div>
+
+<!-- Page 2: Education, Projects, Skills -->
+<div class="page">
+    <!-- structural skeleton stuff that won't get printed out with the pdf -->
+    <div class="structure top-margin"></div>
+    <div class="structure left-margin-header"></div>
+    <div class="structure left-margin-rest"></div>
+    <div class="structure right-margin-header"></div>
+    <div class="structure right-margin-rest"></div>
+    <div class="structure bottom-margin"></div>
 
     <div class="structure education-block">
         <Education/>
         <Certifications/>
     </div>
 
-</div>
-<div class="page">
-    <p>Second <code>.page</code> element</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-    <p>This sentence is preceded by a manual page break:<br />&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;div class="page-break" contenteditable="false"&gt;&lt;/div&gt;</code></p>
-    <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-    <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    <div class="structure project-block">
+        <Project/>
+    </div>
+
+    <div class="structure skills-block">
+        <!-- Full skills section with heading -->
+        <Tech fullSection={true}/>
+    </div>
 </div>
