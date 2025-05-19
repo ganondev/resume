@@ -17,148 +17,97 @@
 <SectionHeader>Employment</SectionHeader>
 <div>
     <Gig
-        title="Cloud Developer III"
-        start="Jan 2022"
-        end="Present"
-        employer="Hewlett Packard Enterprise"
+            title="Cloud Developer III"
+            start="Jan 2022"
+            end="Present"
+            employer="Hewlett Packard Enterprise"
     >
         <Acc>
-            Develop and maintain the Compute Ops Manager platform
+            Spearheaded development and scaling of Compute Ops Manager using Python microservices, React, and AWS, enabling real-time asynchronous communication with tens of thousands of devices.
         </Acc>
         <Acc>
-            Scale platform services to support asyncronous real-time communication
-            with tens of thousands of customer devices (iLO)
+            Designed and implemented robust SQL solutions with PostgreSQL, including advanced read-replica strategies and FastAPI integration to improve system performance.
         </Acc>
         <Acc>
-            Independently develop tools to allow on-call developers to efficiently
-            identify and catalogue production and pipeline issues based on log signatures
-        </Acc>
-<!--        <Acc>-->
-<!--            Own stack of React UI, asynchronous and-->
-<!--            synchronous microservice layer, AWS infrastructure, database administration,-->
-<!--            onboarding of customer devices, and the CI/CD process-->
-<!--        </Acc>-->
-        <Acc>
-            Patent state management and UX flow framework systems
-            based on functional and procedural programming paradigms
-        </Acc>
-<!--        <Acc>-->
-<!--            Enable customers to generate reports of metrics relevant to their devices,-->
-<!--            such as carbon emissions, by constructing real-time device data collection-->
-<!--            and archival infrastructure and microservices-->
-<!--        </Acc>-->
-        <Acc>
-            Develop real-time carbon emissions reporting infrastructure and
-            systems for customer devices
+            Pioneered a patented state management and UX flow framework, elevating the React front-end with innovative procedural programming paradigms.
         </Acc>
         <Acc>
-            Establish and implement internal machine learning model training platform
-            utilizing AWS and on-premises ESX VM infrastructure
+            Built and maintained real-time carbon emissions reporting infrastructure leveraging ClickHouse, AWS, and advanced data aggregation.
         </Acc>
-<!--        <Acc>-->
-<!--            Enable customer awareness of their carbon footprint via development-->
-<!--            of carbon reporting technology-->
-<!--        </Acc>-->
-        <!--        <Acc>-->
-        <!--            Support global multi-region production in daily deploy and real- -->
-        <!--            time defect and health triage.-->
-        <!--        </Acc>-->
         <Acc>
-            Construct real-time customer incident and notification system
+            Established an internal machine learning model training platform, integrating AWS and on-premises resources to accelerate ML adoption.
+        </Acc>
+        <Acc>
+            Developed an agentic LLM system using LangChain, AWS Bedrock, and SageMaker, enabling natural language interaction and workflow automation.
+        </Acc>
+        <Acc>
+            Led overhaul of REST API versioning and security compliance, ensuring enterprise-grade reliability and regulatory alignment.
+        </Acc>
+        <Acc>
+            Contributed open-source enhancements to the Grommet React UI library, driving modernization and performance improvements.
+        </Acc>
+        <Acc>
+            Orchestrated daily CI/CD deployments and production support, utilizing Grafana, Humio, and automated triage tools for rapid incident response.
         </Acc>
     </Gig>
     <Gig
-        title="Application Engineer II"
-        start="Aug 2020"
-        end="Jan 2022"
-        employer="Vanguard"
+            title="Application Engineer II"
+            start="Aug 2020"
+            end="Jan 2022"
+            employer="Vanguard"
     >
-        <Acc>Program engineer spotlight: September 2021</Acc>
-        <Acc>Save tens of thousands $ by optimizing Docker runtimes in ECS</Acc>
         <Acc>
-            Lead team to develop Electron application and serverless
-            infrastructure to enhance continuous production release cycle
+            Engineered and optimized full-stack solutions for a high-traffic retirement planning platform using Angular, Java/Spring, Python Lambdas, and AWS.
         </Acc>
         <Acc>
-            Overhaul architecture microservice layer to establish more
-            resilient and scalable event-driven patterns
+            Led a team to deliver a mission-critical Electron/Angular application, streamlining release cycles and cross-team collaboration.
         </Acc>
         <Acc>
-            Own full stack of Nx Angular UI, numerous of Java/Springboot microservices,
-            and the AWS infrastructure that powers them
+            Achieved significant cost savings by analyzing and optimizing Docker/ECS resource allocations.
         </Acc>
         <Acc>
-            Apply and train machine learning models and Monte Carlo simulations
-            to predict and optimize retirement success
+            Introduced event-driven architectures with AWS SQS, EventBridge, and Lambda, enhancing scalability and resilience.
         </Acc>
         <Acc>
-            Implement high-throughput analytics pipelines utilizing
-            Kafka, S3, SageMaker, Lambda, Redshift, Glue, EMR, and Athena
+            Applied machine learning models and Monte Carlo simulations to deliver predictive analytics and actionable insights.
+        </Acc>
+        <Acc>
+            Implemented high-throughput analytics pipelines with Kafka, S3, SageMaker, Lambda, Redshift, Glue, and Athena, demonstrating deep SQL and data engineering expertise.
         </Acc>
     </Gig>
     <Gig
-        title="Software Engineering Consultant"
-        start="Jan 2018"
-        end="Aug 2020"
-        employer="Fenway Group"
+            title="Software Engineering Consultant"
+            start="Jan 2018"
+            end="Aug 2020"
+            employer="Fenway Group"
     >
-        <Acc>Consultant spotlight: May 2020</Acc>
         <Acc>
-            Manage long and short-term engagements, mentoring developers,
-            driving Agile teams, and constructing software architecture
+            Delivered full-stack solutions for Fortune 500 clients, spanning Java, C#, Python, Angular, and .NET, with a focus on regulatory compliance and data integration.
         </Acc>
         <Acc>
-            Work at all levels of the stack to create and improve client
-            portals, microservices, ETL workflows, and CI pipelines
+            Modernized legacy systems and CI/CD pipelines, migrating monolithic deployments to Azure DevOps and automating business processes.
         </Acc>
         <Acc>
-            Establish confidence through thorough testing systems,
-            including unit, integration, and behavioural via Cypress and Selenium
+            Led teams to deliver complex web applications under tight deadlines, mentoring developers and driving Agile best practices.
         </Acc>
         <Acc>
-            Efficient contributor who lead struggling team to deliver
-            quality full-stack web application packages in under 10 weeks
+            Architected secure authentication and RBAC systems using AWS IAM, JWT, and SSO integrations.
         </Acc>
         <Acc>
-            Secure customer applications using AWS IAM, as well as RBAC via
-            manual JWT management with SSO integrations.
+            Built robust testing frameworks (unit, integration, behavioral) with Cypress and Selenium, ensuring high-quality, reliable software.
         </Acc>
-        <!--
-        TODO embeds:
-        NUnit,
-        Google Sign-In,
-        unit tests, unit testing
-        integration tests, integration testing
-        Kafka,
-        AWS S3,
-        AWS SageMaker,
-        AWS Lambda,
-        AWS Redshift,
-        AWS Glue,
-        AWS EMR,
-        AWS Athena,
-        AWS Kinesis Firehose,
-        Go, Golang,
-        ElasticSearch,
-        OpenSearch,
-        FastAPI, Flask, Django, PyUnit, Extensions API
-        Oracle DB,
-        Debugging,
-        -->
     </Gig>
     <Gig
-        title="Freelance Developer"
-        start="Dec 2016"
-        end="Jan 2018"
-        employer="Virginia Theological Seminary"
+            title="Freelance Developer"
+            start="Dec 2016"
+            end="Jan 2018"
+            employer="Virginia Theological Seminary"
     >
         <Acc>
-            Introduce critical automation and future-proofing for
-            agencies outgrowing their manpower
+            Developed and deployed global event and engagement platforms using React, Python, and automation tools, accelerating organizational growth and efficiency.
         </Acc>
         <Acc>
-            Accelerated the development of products and events by consulting on
-            tools and practices to decrease turn-around times and maintenance costs
+            Created document management utilities leveraging OCR and Python, streamlining real-estate operations for a global non-profit.
         </Acc>
     </Gig>
 </div>

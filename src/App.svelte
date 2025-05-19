@@ -23,9 +23,8 @@
 
     // CONFIG - Updated for 1 column layout
     $header_height: 16;
-    $headline_skills_height: 8;
-    $header_skills_margin: 1;
-    $employment_height: 110;
+    $section_gap: 1;
+    $employment_height: $page_height - $header_height - $section_gap;
     
     $education_height: 25;
     $education_projects_margin: 1;
@@ -40,10 +39,7 @@
     $header_row_start: $margin_size + 1;
     $header_row_end: $header_row_start + $header_height;
 
-    $headline_skills_row_start: $header_row_end + $header_skills_margin;
-    $headline_skills_row_end: $headline_skills_row_start + $headline_skills_height;
-
-    $employment_row_start: $headline_skills_row_end + 1;
+    $employment_row_start: $header_row_end + $section_gap;
     $employment_row_end: $employment_row_start + $employment_height;
 
     // Page 2 layout
@@ -128,11 +124,6 @@
         ) border-box;
     }
 
-    .headline-skills-block {
-      grid-row: #{$headline_skills_row_start} / #{$headline_skills_row_end};
-      grid-column: #{$column_start} / #{$column_end};
-    }
-
     .employment-block {
       grid-row: #{$employment_row_start} / #{$employment_row_end};
       grid-column: #{$column_start} / #{$column_end};
@@ -156,7 +147,7 @@
 
 </style>
 
-<!-- Page 1: Intro, Headline Skills, Employment -->
+<!-- Page 1: Intro, Employment -->
 <div class="page">
     <!-- structural skeleton stuff that won't get printed out with the pdf -->
     <div class="structure top-margin header-bg"></div>

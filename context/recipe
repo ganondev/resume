@@ -1,0 +1,3 @@
+In:
+AES_Encrypt({'option':'UTF8','string':'32bytes'},{'option':'UTF8','string':'16bytes'},'CBC','Raw','Raw',{'option':'Hex','string':''})
+To_Base64('A-Za-z0-9+/=')
