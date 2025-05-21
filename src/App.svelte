@@ -55,6 +55,32 @@
     $column_start: $margin_size + 1;
     $column_end: $column_start + $full_width;
 
+    // Page 2 two-column layout
+    $left_col_width: 53; // percent of page width
+    $col_gap: 2; // percent of page width for gap between columns
+    $right_col_width: 38; // reduced to compensate for gap
+
+    .page.page2 {
+      display: grid;
+      grid-template-columns: repeat($margin_size, 1%) repeat($left_col_width, 1%) repeat($col_gap, 1%) repeat($right_col_width, 1%) repeat($margin_size, 1%);
+      grid-template-rows: repeat($total_height, 8.02px);
+    }
+
+    .left-col {
+      grid-column: #{1 + $margin_size} / #{1 + $margin_size + $left_col_width};
+      grid-row: #{1 + $margin_size} / #{141 - $margin_size};
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .right-col {
+      grid-column: #{1 + $margin_size + $left_col_width + $col_gap} / #{1 + $margin_size + $left_col_width + $col_gap + $right_col_width};
+      grid-row: #{1 + $margin_size} / #{141 - $margin_size};
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
     .page {
       display: grid;
       grid-template-columns: repeat($total_width, 1%);
@@ -167,7 +193,7 @@
 </div>
 
 <!-- Page 2: Education, Projects, Skills -->
-<div class="page">
+<div class="page page2">
     <!-- structural skeleton stuff that won't get printed out with the pdf -->
     <div class="structure top-margin"></div>
     <div class="structure left-margin-header"></div>
@@ -176,17 +202,20 @@
     <div class="structure right-margin-rest"></div>
     <div class="structure bottom-margin"></div>
 
-    <div class="structure education-block">
-        <Education/>
-        <Certifications/>
+    <div class="left-col">
+        <div class="education-block">
+            <Education/>
+            <Certifications/>
+        </div>
+        <div class="project-block">
+            <Project/>
+        </div>
     </div>
-
-    <div class="structure project-block">
-        <Project/>
-    </div>
-
-    <div class="structure skills-block">
-        <!-- Full skills section with heading -->
-        <Tech fullSection={true}/>
+    <div class="right-col">
+        <div class="skills-block">
+            <!-- Full skills section with heading -->
+            <Tech />
+        </div>
     </div>
 </div>
+

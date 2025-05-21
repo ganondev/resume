@@ -1,5 +1,6 @@
 <script>
     import Separator from "./Separator.svelte";
+    import SectionHeader from "./SectionHeader.svelte";
 </script>
 
 <style lang="scss">
@@ -12,7 +13,7 @@
     }
 </style>
 
-<Separator/>
+<SectionHeader>Certs</SectionHeader>
 <div>
     <h3 class="highlight-text">AWS Certified Solutions Architect - Associate</h3>
     <div class="body-text">Amazon Web Services ● Sep 2020 - Sep 2024 </div>

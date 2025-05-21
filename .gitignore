@@ -5,4 +5,4 @@
 
 resumes/
 context/*.md
-context/*.md
+!context/skills.md

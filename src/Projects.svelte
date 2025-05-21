@@ -18,25 +18,26 @@
 </style>
 
 <SectionHeader>Projects</SectionHeader>
-<!--<Project-->
-<!--    title="libant"-->
-<!--    link="https://github.com/zefaxet/libant"-->
-<!--    desc="Embedded cellular automata engine in C"-->
-<!--/>-->
 <Project
-    title="shallnotpass.io"
-    link="https://shallnotpass.io"
-    desc="Stateless password management tool"
+        title="note.soy"
+        link="https://note.soy"
+        desc="Markdown note-taking app, full serverless stack (React, AWS, Terraform)"
 />
 <Separator/>
 <Project
-    title="Reaction Engine"
-    link="In Development"
-    desc="ML powered search and catalog for memes"
+        title="shallnotpass.io"
+        link="https://shallnotpass.io"
+        desc="Stateless password manager (Svelte, AWS, Lambda, Terraform)"
 />
 <Separator/>
 <Project
-    title="Godot Engine"
-    link="https://github.com/godotengine/godot"
-    desc="Contributor, build system and C# bindings"
+        title="Godot Engine"
+        link="https://github.com/godotengine/godot"
+        desc="Contributor: C# bindings, build system (C++, C#)"
+/>
+<Separator/>
+<Project
+        title="jsx-email"
+        link="https://github.com/shellscape/jsx-email"
+        desc="Custom React renderer for email templates (React, Node.js)"
 />

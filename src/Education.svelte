@@ -17,7 +17,7 @@
 </style>
 
 <div>
-    <SectionHeader>Education and Certs</SectionHeader>
+    <SectionHeader>Education</SectionHeader>
     <h3 class="highlight-text">Georgia Institute of Technology</h3>
     <div class="edu-body">
         <p class="body-text">M.Sc. Computer Science - Artificial Intelligence <i>(in progress)</i></p>
